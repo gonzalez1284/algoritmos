@@ -16,6 +16,6 @@ int main(){
 
   printf("O valor da média é: %f\n", m);
 
-  return(0);
+  return 0;
   
 }
