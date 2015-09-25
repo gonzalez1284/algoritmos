@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*        
+           L2
+     ---------------
+    |               |
+ L1 |               | L3
+    |               |
+    |_______________|
+    
+           L4
+
+
+*/
+
+
 int main(){
     
     int l1,l2,l3,l4 = 0;
@@ -16,7 +30,7 @@ int main(){
     
     printf("Lado 1: %d\nLado 2: %d\nLado 3: %d\nLado 4: %d\n", l1, l2, l3, l4);
     
-    if( l1 == l2 && l2 == l3 && l3==l4 ){
+    if( l1 == l2 && l2 == l3 && l3 == l4 ){
       
       printf("Quadrado\n");
           
@@ -24,21 +38,12 @@ int main(){
            
       printf("Retangulo\n");      
       
-    } else if( l1 == l2 && l3 == l4 ){
-           
-       printf("Retangulo\n");
-           
-    } else if( l1 == l4 && l2 == l3 ){
-    
-       printf("Retangulo\n");
-           
     } else {
            
        printf("Figura nao conhecida\n");           
            
     }
-    
-    
+ 
     system("pause");
     
     return 0;   
